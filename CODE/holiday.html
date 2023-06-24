@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Techwind - Tailwind CSS Multipurpose Landing Page Template</title>
+
+    <link rel="icon" type="images/png" href="IMG/favicon.ico" />
+
+    <link rel="stylesheet" type="text/css" href="CSS/font.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/font-awesome-pro.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/responsive.css" />
+</head>
+
+
+<body>
+
+    <!-- ============= HEADER ============= -->
+
+    <header class="navbar navbar-expand-lg bg-white top-0 start-0 w-100 position-fixed">
+        <div class="container">
+            <a href="index.html"><img src="IMG/logo-dark.png" alt="header-logo" /></a>
+            <nav class="navbar-collapse collapse justify-content-center" id="menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link" style="font-weight: 800;">HOME</a></li>
+                    <li class="nav-item"><a href="corporate.html" class="nav-link" style="font-weight: 800;">CORPORATE
+                            <i class="fa-solid fa-angle-down"></i></a></li>
+                    <li class="nav-item"><a href="food.html" class="nav-link" style="font-weight: 800;">FOOD
+                            <i class="fa-solid fa-angle-down"></i></a></li>
+                    <li class="nav-item"><a href="seo.html" class="nav-link" style="font-weight: 800;">SEO <i
+                                class="fa-solid fa-angle-down"></i></a></li>
+                    <li class="nav-item"><a href="holiday.html" class="nav-link" style="font-weight: 800;">HOLIDAY
+                            <i class="fa-solid fa-angle-down"></i></a></li>
+                    <li class="nav-item"><a href="javascript:void(0);" class="nav-link"
+                            style="font-weight: 800;">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="header-btn">
+                <a href="javascript:void(0);" class="header-btn-1 btn border border-1 rounded-circle"><i
+                        class="fa-light fa-gear"></i></a>
+                <a href="javascript:void(0);" class="header-btn-1 btn rounded-circle"><i
+                        class="fa-regular fa-cart-shopping"></i></a>
+            </div>
+            <button class="btn navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ---------------------------------- carousel -------------------------- -->
+
+    <!-- <section class="holiday-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="holiday-data position-relative">
+                        <h1>Make your holidays memorables</h1>
+                        <p>Start working with Tailwind CSS that can provide everything you need to generate awareness,
+                            drive traffic, connect.</p>
+                        <button class="btn"><i class="fa-solid fa-arrow-down"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section class="take-care relative">
+        <div class="carousel slide carousel-fade" id="carouselInterval" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="IMG/bg01.jpg" alt="img" class="bg-img d-block w-100" />
+                    <div class="gradient"></div>
+                    <div class="container">
+                        <div class="carousel-caption d-none d-md-block text-start">
+                            <h1 class="fw-bold mb-4">Take Care of Your Future</h1>
+                            <p class="cp">Launch your campaign and benefit from our expertise on designing and
+                                managing conversion
+                                centered Tailwind CSS v3.x html page.</p>
+                            <a href="javascript:void(0);" class="btn contact-us-btn mt-4">Contact us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="IMG/bg02.jpg" alt="img" class="bg-img d-block w-100" />
+                    <div class="gradient-1"></div>
+                    <div class="container">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="fw-bold mb-4">Take Care of Your Future</h1>
+                            <p class="m-auto cpp">Launch your campaign and benefit from our expertise on
+                                designing and managing conversion
+                                centered Tailwind CSS v3.x html page.</p>
+                            <a href="javascript:void(0);" class="btn contact-us-btn mt-4">Contact us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="6000">
+                    <img src="IMG/bg03.jpg" alt="img" class="bg-img d-block w-100" />
+                    <div class="gradient-2"></div>
+                    <div class="container">
+                        <div class="carousel-caption d-none d-md-block text-end">
+                            <h1 class="fw-bold mb-4">Build and Grow Your Business</h1>
+                            <p class="ms-auto cppp">Launch your campaign and benefit from our expertise on designing and
+                                managing conversion
+                                centered Tailwind CSS v3.x html page.</p>
+                            <a href="javascript:void(0);" class="btn contact-us-btn mt-4">Contact us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev border-2 border-white opacity-100" data-bs-target="#carouselInterval"
+                data-bs-slide="prev">
+                <div class="take-btn rounded-circle">
+                    <span class="carousel-control-prev-icon"></span>
+                </div>
+            </button>
+            <button class="carousel-control-next border-2 border-white opacity-100" data-bs-target="#carouselInterval"
+                data-bs-slide="next">
+                <div class="take-btn rounded-circle">
+                    <span class="carousel-control-next-icon"></span>
+                </div>
+            </button>
+        </div>
+    </section>
+
+    <!-- ====== Search ======= -->
+    <section class="search-plan">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <form class="rounded-form">
+                        <h4>Search your trip</h4>
+                        <p>We make it a priority to offer flexible services to accomodate your needs</p>
+                        <div class="row justify-content-between align-items-end">
+                            <div class="col-lg-2">
+                                <label class="form-label">Check in :</label>
+                                <input class="form-control" placeholder="select date:" />
+                            </div>
+                            <div class="col-lg-2">
+                                <label class="form-label">Check out :</label>
+                                <input class="form-control" placeholder="select date:" />
+                            </div>
+                            <div class="col-lg-2">
+                                <label class="form-label">Adults :</label>
+                                <input class="form-control" type="number" placeholder="Adults :" />
+                            </div>
+                            <div class="col-lg-2">
+                                <label class="form-label">Childrens :</label>
+                                <input class="form-control" type="number" placeholder="Childrens :" />
+                            </div>
+                            <div class="col-lg-2">
+                                <input class="form-control btn fw-semibold" type="submit" value="Search Now" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== week ===== -->
+    <section class="week">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <div class="weekimg">
+                        <div class="week-img-1 ">
+                            <img src="IMG/ab1.jpg" class="w-75" alt="">
+                        </div>
+                        <div class="week-img-2 ">
+                            <img src="IMG/ab2.jpg" class="w-50" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="week-data">
+                        <h3>Get inspiration for future trips weekly</h3>
+                        <p>Start working with Tailwind CSS that can provide everything you need to generate
+                            awareness, drive traffic, connect. Dummy text is text that is used in the publishing
+                            industry or by web designers to occupy the space which will later be filled with 'real'
+                            content.</p>
+                        <ul class="list">
+                            <li><i class="fa-regular fa-circle-check"></i>Digital Marketing Solutions for Tomorrow
+                            </li>
+                            <li><i class="fa-regular fa-circle-check"></i>Our Talented & Experienced Marketing
+                                Agency</li>
+                            <li><i class="fa-regular fa-circle-check"></i>Create your own skin to match your brand
+                                Contact us</li>
+                        </ul>
+                        <a href="javascript:void(0);" class="btn"><i class="fa-regular fa-envelope"></i> Contact
+                            us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------------------------amazon------------------------- -->
+
+    <section class="amazon amase">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="mx-auto py-3">
+                        <img src="IMG/amazon.svg" alt="amazon" />
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="mx-auto py-3">
+                        <img src="IMG/google.svg" alt="amazon" />
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="mx-auto py-3">
+                        <img src="IMG/lenovo.svg" alt="amazon" />
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="mx-auto py-3">
+                        <img src="IMG/lenovo.svg" alt="amazon" />
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="mx-auto py-3">
+                        <img src="IMG/paypal.svg" alt="amazon" />
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="mx-auto py-3">
+                        <img src="IMG/shopify.svg" alt="amazon" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======= tour =========== -->
+    <section class="tour">
+        <div class="container">
+            <div class="tour-data text-center  pb-4">
+                <h4>Popular Tours</h4>
+                <p>Start working with Tailwind CSS that can provide everything you need to generate awareness, drive
+                    traffic, connect.</p>
+            </div>
+            <div class="tour-2">
+                <div class="row">
+                    <div class="col-3 mt-4">
+                        <div class="tours position-relative">
+                            <img src="IMG/hotel1.jpg" class="rounded" alt="">
+                            <div class="tour-data px-3 pt-3 position-absolute ">
+                                <span class="reccomend">Recommend</span>
+                            </div>
+                            <div class="tour-data-2 px-3 pb-3  w-100 position-absolute">
+                                <h5><a href="javascript:void(0);">Paradise Beach, Island</a></h5>
+                                <div class="toues-dd">
+                                    <span><i class="fa-solid fa-dollar-sign"></i>549</span>
+                                    <span><i class="fa-solid fa-plane-departure "></i>10 Days</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 mt-4">
+                        <div class="tours position-relative">
+                            <img src="IMG/hotel2.jpg" class="rounded" alt="">
+                            <div class="tour-data px-3 pt-3 position-absolute ">
+                                <span class="reccomend">Recommend</span>
+                            </div>
+                            <div class="tour-data-2 px-3 pb-3  w-100 position-absolute">
+                                <h5><a href="javascript:void(0);">Paradise Beach, Island</a></h5>
+                                <div class="toues-dd">
+                                    <span><i class="fa-solid fa-dollar-sign"></i>549</span>
+                                    <span><i class="fa-solid fa-plane-departure "></i>10 Days</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 mt-4">
+                        <div class="tours position-relative">
+                            <img src="IMG/hotel3.jpg" class="rounded" alt="">
+                            <div class="tour-data px-3 pt-3 position-absolute ">
+                                <span class="reccomend">Recommend</span>
+                            </div>
+                            <div class="tour-data-2 px-3 pb-3  w-100 position-absolute">
+                                <h5><a href="javascript:void(0);">Paradise Beach, Island</a></h5>
+                                <div class="toues-dd">
+                                    <span><i class="fa-solid fa-dollar-sign"></i>549</span>
+                                    <span><i class="fa-solid fa-plane-departure "></i>10 Days</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 mt-4">
+                        <div class="tours position-relative">
+                            <img src="IMG/hotel4.jpg" class="rounded" alt="">
+                            <div class="tour-data px-3 pt-3 position-absolute ">
+                                <span class="reccomend">Recommend</span>
+                            </div>
+                            <div class="tour-data-2 px-3 pb-3  w-100 position-absolute">
+                                <h5><a href="javascript:void(0);">Paradise Beach, Island</a></h5>
+                                <div class="toues-dd">
+                                    <span><i class="fa-solid fa-dollar-sign"></i>549</span>
+                                    <span><i class="fa-solid fa-plane-departure "></i>10 Days</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 mt-4">
+                        <div class="tours position-relative">
+                            <img src="IMG/hotel5.jpg" class="rounded" alt="">
+                            <div class="tour-data px-3 pt-3 position-absolute ">
+                                <span class="reccomend">Recommend</span>
+                            </div>
+                            <div class="tour-data-2 px-3 pb-3  w-100 position-absolute">
+                                <h5><a href="javascript:void(0);">Paradise Beach, Island</a></h5>
+                                <div class="toues-dd">
+                                    <span><i class="fa-solid fa-dollar-sign"></i>549</span>
+                                    <span><i class="fa-solid fa-plane-departure "></i>10 Days</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 mt-4">
+                        <div class="tours position-relative">
+                            <img src="IMG/hotel6.jpg" class="rounded" alt="">
+                            <div class="tour-data px-3 pt-3 position-absolute ">
+                                <span class="reccomend">Recommend</span>
+                            </div>
+                            <div class="tour-data-2 px-3 pb-3  w-100 position-absolute">
+                                <h5><a href="javascript:void(0);">Paradise Beach, Island</a></h5>
+                                <div class="toues-dd">
+                                    <span><i class="fa-solid fa-dollar-sign"></i>549</span>
+                                    <span><i class="fa-solid fa-plane-departure "></i>10 Days</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 mt-4">
+                        <div class="tours position-relative">
+                            <img src="IMG/hotel7.jpg" class="rounded" alt="">
+                            <div class="tour-data px-3 pt-3 position-absolute ">
+                                <span class="reccomend">Recommend</span>
+                            </div>
+                            <div class="tour-data-2 px-3 pb-3  w-100 position-absolute">
+                                <h5><a href="javascript:void(0);">Paradise Beach, Island</a></h5>
+                                <div class="toues-dd">
+                                    <span><i class="fa-solid fa-dollar-sign"></i>549</span>
+                                    <span><i class="fa-solid fa-plane-departure "></i>10 Days</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 mt-4">
+                        <div class="tours position-relative">
+                            <img src="IMG/hotel8.jpg" class="rounded" alt="">
+                            <div class="tour-data px-3 pt-3 position-absolute ">
+                                <span class="reccomend">Recommend</span>
+                            </div>
+                            <div class="tour-data-2 px-3 pb-3  w-100 position-absolute">
+                                <h5><a href="javascript:void(0);">Paradise Beach, Island</a></h5>
+                                <div class="toues-dd">
+                                    <span><i class="fa-solid fa-dollar-sign"></i>549</span>
+                                    <span><i class="fa-solid fa-plane-departure "></i>10 Days</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========= resort ========= -->
+    <section class="resort">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="resort-data">
+                        <h3>Resort Surprises</h3>
+                        <p>Start working with Tailwind CSS that can provide everything you need to generate
+                            awareness, drive traffic, connect. Dummy text is text that is used in the publishing
+                            industry or by web designers to occupy the space which will later be filled with 'real'
+                            content.</p>
+                        <ul class="list">
+                            <li><i class="fa-regular fa-circle-check"></i>Digital Marketing Solutions for Tomorrow
+                            </li>
+                            <li><i class="fa-regular fa-circle-check"></i>Our Talented & Experienced Marketing
+                                Agency</li>
+                            <li><i class="fa-regular fa-circle-check"></i>Create your own skin to match your brand
+                                Contact us</li>
+                        </ul>
+                        <div class="resort-video-btn mt-4 d-flex align-items-center">
+                            <a href="javascript:void(0);"
+                                class="btn d-inline-flex justify-content-center align-items-center"><i
+                                    class="fa-solid fa-video"></i></a>
+                            <span>Watch Now</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="resort-img">
+                        <img src="IMG/ab3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==== user ===== -->
+    <section class="what-our">
+        <div class="container">
+            <div class="what-our-box text-center" style="padding-bottom: 32px;">
+                <h3 class="mb-3 w-25 mx-auto">What our customer
+                    say about us</h3>
+                <p>Start working with Techwind that can provide everything you need to generate awareness, drive
+                    traffic, connect.</p>
+            </div>
+
+            <div class="carousel slide" id="carouselInterval" data-bs-ride="carousel">
+                <div class="carousel-inner cursor pb-5">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="content text-center p-4 mb-2">
+                                    <i class="fa-sharp fa-solid fa-quote-left fs-1 text-center"></i>
+                                    <p class="m-auto">" It seems that only fragments of the original text remain in the
+                                        Lorem Ipsum texts
+                                        used today. "</p>
+                                    <div>
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-4">
+                                    <img src="IMG/01.jpg" alt="img" class="rounded-circle"
+                                        style="width: 56px; height: 56px;" />
+                                    <h6 class="fw-bold mt-2">Calvin Carlo</h6>
+                                    <span>Manager</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="content text-center p-4 mb-2">
+                                    <i class="fa-sharp fa-solid fa-quote-left fs-1 text-center"></i>
+                                    <p class="m-auto" style="width: 90%;">" The most well-known dummy text is the 'Lorem
+                                        Ipsum', which is said to have originated in the 16th century. "</p>
+                                    <div>
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-4">
+                                    <img src="IMG/02 (1).jpg" alt="img" class="rounded-circle"
+                                        style="width: 56px; height: 56px;" />
+                                    <h6 class="fw-bold mt-2">Christa Smith</h6>
+                                    <span>Manager</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="content text-center p-4 mb-2">
+                                    <i class="fa-sharp fa-solid fa-quote-left fs-1 text-center"></i>
+                                    <p class="m-auto" style="width: 90%;">" There is now an abundance of readable dummy
+                                        texts. These are usually used when a text is required. "</p>
+                                    <div>
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-4">
+                                    <img src="IMG/05.jpg" alt="img" class="rounded-circle"
+                                        style="width: 56px; height: 56px;" />
+                                    <h6 class="fw-bold mt-2">Cristino Murfi</h6>
+                                    <span>Manager</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="content text-center p-4 mb-2">
+                                    <i class="fa-sharp fa-solid fa-quote-left fs-1 text-center"></i>
+                                    <p class="m-auto" style="width: 90%;">" There is now an abundance of readable dummy
+                                        texts. These are usually used when a text is required. "</p>
+                                    <div>
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-4">
+                                    <img src="IMG/05.jpg" alt="img" class="rounded-circle"
+                                        style="width: 56px; height: 56px;" />
+                                    <h6 class="fw-bold mt-2">Cristino Murfi</h6>
+                                    <span>Manager</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="content text-center p-4 mb-2">
+                                    <i class="fa-sharp fa-solid fa-quote-left fs-1 text-center"></i>
+                                    <p class="m-auto" style="width: 90%;">" According to most sources, Lorum Ipsum can
+                                        be traced back to a text composed by Cicero. "</p>
+                                    <div>
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-4">
+                                    <img src="IMG/06.jpg" alt="img" class="rounded-circle"
+                                        style="width: 56px; height: 56px;" />
+                                    <h6 class="fw-bold mt-2">Cristino Murfi</h6>
+                                    <span>Manager</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="content text-center p-4 mb-2">
+                                    <i class="fa-sharp fa-solid fa-quote-left fs-1 text-center"></i>
+                                    <p class="m-auto">" Thus, Lorem Ipsum has only limited suitability as a visual
+                                        filler for German texts. "</p>
+                                    <div>
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-4">
+                                    <img src="IMG/04.jpg" alt="img" class="rounded-circle"
+                                        style="width: 56px; height: 56px;" />
+                                    <h6 class="fw-bold mt-2">Smith Vodka</h6>
+                                    <span>Manager</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-indicators">
+                    <button data-bs-target="#carouselInterval" type="button" data-bs-slide-to="0" class="active"
+                        aria-current="true"></button>
+                    <button data-bs-target="#carouselInterval" type="button" data-bs-slide-to="1"></button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- ==== blog ==== -->
+    <section class="blog-2">
+        <div class="container">
+            <div class="row">
+                <div class="blog-data text-center">
+                    <h3 class="mx-auto">Blog Or News</h3>
+                    <p class="mx-auto w-50">Start working with Tailwind CSS that can provide everything you need to
+                        generate awareness, drive traffic, connect.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="card border-0">
+                        <div class="blog-img">
+                            <img src="IMG/b1.jpg" alt="">
+                        </div>
+                        <div class="blog-body">
+                            <h6 class="fw-medium"><a href="#">Design your apps in your own way</a></h6>
+                            <p>The phrasal sequence of the is now so that many campaign and benefit</p>
+                            <span><a href="">Read More <i class="fa-solid fa-arrow-right"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card border-0">
+                        <div class="blog-img">
+                            <img src="IMG/b2.jpg" alt="">
+                        </div>
+                        <div class="blog-body">
+                            <h6 class="fw-medium"><a href="#">How apps is changing the IT world</a></h6>
+                            <p>The phrasal sequence of the is now so that many campaign and benefit</p>
+                            <span><a href="">Read More <i class="fa-solid fa-arrow-right"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card border-0">
+                        <div class="blog-img">
+                            <img src="IMG/b3.jpg" alt="">
+                        </div>
+                        <div class="blog-body">
+                            <h6 class="fw-medium"><a href="#">Smartest Applications for Business</a></h6>
+                            <p>The phrasal sequence of the is now so that many campaign and benefit</p>
+                            <span><a href="">Read More <i class="fa-solid fa-arrow-right"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== footer ======= -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-logo">
+                        <a href="index.html"><img src="IMG/logo-light.png" alt="footer-logo" /></a>
+                        <p class="mt-4 mb-0" style="width: 99%; line-height: 26px;">Start working with Tailwind CSS that
+                            can provide everything you need to generate awareness,
+                            drive traffic, connect.</p>
+                        <ul class="list-unstyled d-flex mt-4">
+                            <li class="footer-btn"><a href="javascript:void(0);"
+                                    class="btn border-1 rounded-2 p-0 d-inline-flex justify-content-center"><i
+                                        class="fa-solid fa-cart-shopping"></i></a></li>
+                            <li class="footer-btn"><a href="javascript:void(0);"
+                                    class="btn border-1 rounded-2 p-0 d-inline-flex justify-content-center"><i
+                                        class="fa-brands fa-dribbble"></i></a></li>
+                            <li class="footer-btn"><a href="javascript:void(0);"
+                                    class="btn border-1 rounded-2 p-0 d-inline-flex justify-content-center"><i
+                                        class="fa-brands fa-behance"></i></a></li>
+                            <li class="footer-btn"><a href="javascript:void(0);"
+                                    class="btn border-1 rounded-2 p-0 d-inline-flex justify-content-center"><i
+                                        class="fa-brands fa-linkedin"></i></a></li>
+                            <li class="footer-btn"><a href="javascript:void(0);"
+                                    class="btn border-1 rounded-2 p-0 d-inline-flex justify-content-center"><i
+                                        class="fa-brands fa-facebook"></i></a></li>
+                            <li class="footer-btn"><a href="javascript:void(0);"
+                                    class="btn border-1 rounded-2 p-0 d-inline-flex justify-content-center"><i
+                                        class="fa-brands fa-instagram"></i></a></li>
+                            <li class="footer-btn"><a href="javascript:void(0);"
+                                    class="btn border-1 rounded-2 p-0 d-inline-flex justify-content-center"><i
+                                        class="fa-brands fa-twitter"></i></a></li>
+                            <li class="footer-btn"><a href="javascript:void(0);"
+                                    class="btn border-1 rounded-2 p-0 d-inline-flex justify-content-center"><i
+                                        class="fa-regular fa-envelope"></i></a></li>
+                            <li class="footer-btn"><a href="javascript:void(0);"
+                                    class="btn border-1 rounded-2 p-0 d-inline-flex justify-content-center"><i
+                                        class="fa-regular fa-file"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled mt-4">
+                        <li style="margin-top: 10px;"><a href="javascript:void(0);" class="hover"><i
+                                    class="fa-solid fa-angle-right pe-2"></i>About us</a></li>
+                        <li style="margin-top: 10px;"><a href="javascript:void(0);" class="hover"><i
+                                    class="fa-solid fa-angle-right pe-2"></i>Services</a></li>
+                        <li style="margin-top: 10px;"><a href="javascript:void(0);" class="hover"><i
+                                    class="fa-solid fa-angle-right pe-2"></i>Team</a></li>
+                        <li style="margin-top: 10px;"><a href="javascript:void(0);" class="hover"><i
+                                    class="fa-solid fa-angle-right pe-2"></i>Pricing</a></li>
+                        <li style="margin-top: 10px;"><a href="javascript:void(0);" class="hover"><i
+                                    class="fa-solid fa-angle-right pe-2"></i>Project</a></li>
+                        <li style="margin-top: 10px;"><a href="javascript:void(0);" class="hover"><i
+                                    class="fa-solid fa-angle-right pe-2"></i>Blog</a></li>
+                        <li style="margin-top: 10px;"><a href="javascript:void(0);" class="hover"><i
+                                    class="fa-solid fa-angle-right pe-2"></i>Login</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Usefull Links</h5>
+                    <ul class="list-unstyled mt-4">
+                        <li style="margin-top: 10px;"><a href="javascript:void(0);" class="hover"><i
+                                    class="fa-solid fa-angle-right pe-2"></i>Terms of Services</a>
+                        </li>
+                        <li style="margin-top: 10px;"><a href="javascript:void(0);" class="hover"><i
+                                    class="fa-solid fa-angle-right pe-2"></i>Privacy Policy</a></li>
+                        <li style="margin-top: 10px;"><a href="javascript:void(0);" class="hover"><i
+                                    class="fa-solid fa-angle-right pe-2"></i>Documentation</a></li>
+                        <li style="margin-top: 10px;"><a href="javascript:void(0);" class="hover"><i
+                                    class="fa-solid fa-angle-right pe-2"></i>Changelog</a></li>
+                        <li style="margin-top: 10px;"><a href="javascript:void(0);" class="hover"><i
+                                    class="fa-solid fa-angle-right pe-2"></i>Widget</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Newsletter</h5>
+                    <p class="mt-4">Sign up and receive the latest tips via email.</p>
+                    <form>
+                        <div class="email-form">
+                            <div class="footer-form">
+                                <label style="color: #e5e7eb;">Write your email <span>*</span></label>
+                                <div class="position-relative icon-email">
+                                    <i class="fa-sharp fa-regular fa-envelope  position-absolute"></i>
+                                    <input type="email" class="ps-5 border-0 mt-2 rounded-2" placeholder="Email"
+                                        required />
+                                </div>
+                            </div>
+                            <button class="btn text-white w-100 mt-2">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom border-top w-100">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <p class="mb-0">&copy; 2023 Techwind. Design with <i class="fa-solid fa-heart"
+                                style="color: red;"></i> by <a href="javascript:void(0);">Shreethemes.</a></p>
+                    </div>
+                    <div class="col-lg-6">
+                        <ul class="list-unstyled d-flex justify-content-end">
+                            <li><a href="javascript:void(0);"><img src="IMG/american-ex.png"
+                                        alt="footer-bottom-img" /></a></li>
+                            <li><a href="javascript:void(0);"><img src="IMG/discover.png" alt="footer-bottom-img" /></a>
+                            </li>
+                            <li><a href="javascript:void(0);"><img src="IMG/master-card.png"
+                                        alt="footer-bottom-img" /></a></li>
+                            <li><a href="javascript:void(0);"><img src="IMG/paypal.png" alt="footer-bottom-img" /></a>
+                            </li>
+                            <li><a href="javascript:void(0);"><img src="IMG/visa.png" alt="footer-bottom-img" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
